@@ -14,3 +14,4 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', [PostController::class, 'index']);    /* '/'はリクエストの一番最初にあるもの*/
+Route::get('/posts/{post}',[PostController::class, 'show']);
